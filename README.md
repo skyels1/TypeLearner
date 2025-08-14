@@ -9,7 +9,9 @@ this is the first program I have made using C
 
 ## Features
 
-the current stage of this project is just a single sentence and has WPM and acc
+the current stage of this project is just a single sentence and has words per minute calculator (WPM) and accuracy percentage
+
+### Screenshot
 
 ![(image) example of what the code looks like](/previews/TypeLearner.png)
 
