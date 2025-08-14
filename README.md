@@ -17,7 +17,7 @@ the current stage of this project is just a single sentence and has words per mi
 
 ### Screenshot - with mistakes
 
-![(image) example of what the code looks like with mistakes](/previews/TypeLearner2wm2.png)
+![(image) example of what the code looks like with mistakes](/previews/TypeLearner2wm.png)
 
 ## Plans for the future of this project
 
