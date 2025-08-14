@@ -1,5 +1,6 @@
 #define _POSIX_C_SOURCE 199309L
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
@@ -18,14 +19,30 @@ double checkTime(){
 }
 
 int main() {
-    char foxS[] = "the quick brown fox jumps over the lazy dog";
-    size_t length = strlen(foxS);
+    const char *easyPrac[] = {
+        "the quick brown fox jumps over the lazy dog",
+        "sixty zippers were quickly picked from the woven jute bag",
+        "my girl wove six dozen plaid jackets before she quit",
+        "brown jars prevented the mixture from freezing too quickly",
+        "we promptly judged antique ivory buckles for the next prize",
+        "farmer Jack realized that big yellow quilts were expensive",
+        "when zombies arrive quickly fax Judge pat"
+    };
+    //char foxS[] = "the quick brown fox jumps over the lazy dog";
+    int totalSentences = sizeof(easyPrac) / sizeof(easyPrac[0]);
+    srand(time(NULL));
+
+    int index = rand() % totalSentences;
+
+    char *chosen = easyPrac[index];
+
+    size_t length = strlen(chosen);
     int correctChar = 0;
     int wordCount = 0;
     int insideWord = 0;
 
     printf("Type what is shown below:\n\n");
-    printf("%s\n\n", foxS);
+    printf("%s\n\n", chosen);
 
     double start = checkTime();
 
@@ -36,7 +53,7 @@ int main() {
 
     // loop to check if the typed string is the same as what is given and for the amount of words
     for(int i = 0; i<length; i++){
-        char character = foxS[i];
+        char character = chosen[i];
         char typedCharacter = typed[i];
 
         if(!checkSpace(character)) {
