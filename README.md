@@ -21,7 +21,7 @@ the current stage of this project is just a single sentence and has words per mi
 
 - possibly add randomizer to it so that its just random letters and such for more practice
 
-- most importantly I plan to add code examples to this so that I can practice typing real code instead of just sentences ie more practical for my usage
+- most importantly I plan to add code examples to this to practice typing real code instead of just sentences ie more practical for my usage
 
 ## Status
 
