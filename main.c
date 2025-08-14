@@ -1,3 +1,4 @@
+#define _POSIX_C_SOURCE 199309L
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
@@ -10,23 +11,28 @@ int checkSpace(char c) {
     }
 }
 
+double checkTime(){
+    struct timespec ts;
+    clock_gettime(CLOCK_MONOTONIC, &ts);
+    return ts.tv_sec + ts.tv_nsec / 1e9;
+}
+
 int main() {
     char foxS[] = "the quick brown fox jumps over the lazy dog";
     size_t length = strlen(foxS);
     int correctChar = 0;
     int wordCount = 0;
     int insideWord = 0;
-    time_t start, end;
 
     printf("Type what is shown below:\n\n");
     printf("%s\n\n", foxS);
 
-    time(&start);
+    double start = checkTime();
 
     char typed[length + 1];
     scanf("%[^\n]", typed);
 
-    time(&end);
+    double end = checkTime();
 
     // loop to check if the typed string is the same as what is given and for the amount of words
     for(int i = 0; i<length; i++){
@@ -47,19 +53,19 @@ int main() {
             correctChar++;
         }
     }
-    double deltaTime = difftime(end, start);
+    double elapsed = end - start;
 
-    printf("\nYou took %.0f seconds.\n", deltaTime);
+    //printf("\nYou took %.2f seconds.\n", elapsed);
 
-    //printf("\nword count is %i:\n", wordCount);
+    //printf("\nword count is: %i\n", wordCount);
 
-    double WPM = ((wordCount * 60) / deltaTime);
+    float WPM = ((wordCount * 60) / (double)elapsed);
 
-    printf("\nWPM is: %.0f\n", WPM);
+    printf("\nWPM is: %.2f\n", WPM);
     // calculate the acc
     float acc = ((double)correctChar/(double)length)*100;
     // print stats
-    printf("\nacc is: %.0f%%\n", acc);
+    printf("\nacc is: %.2f%%\n", acc);
 
     return 0;
 }
