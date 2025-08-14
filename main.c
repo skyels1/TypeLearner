@@ -55,17 +55,19 @@ int main() {
     }
     double elapsed = end - start;
 
-    //printf("\nYou took %.2f seconds.\n", elapsed);
+    printf("\nYou took %.2f seconds.\n", elapsed);
 
     //printf("\nword count is: %i\n", wordCount);
 
     float WPM = ((wordCount * 60) / (double)elapsed);
-
-    printf("\nWPM is: %.2f\n", WPM);
+   
     // calculate the acc
-    float acc = ((double)correctChar/(double)length)*100;
+    float acc = ((double)correctChar/(double)length);
     // print stats
-    printf("\nacc is: %.2f%%\n", acc);
+    float accWPM = WPM * acc;
+    printf("\nWPM is: %.2f\n", accWPM);
+    printf("\naccuracy is: %.2f%%\n", acc * 100);
+    printf("\nWPM without mistakes is: %.2f\n", WPM);
 
     return 0;
 }
