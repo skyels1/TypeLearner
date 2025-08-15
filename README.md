@@ -12,7 +12,8 @@ this is the first program I have made using C
 3 selections for difficulty 
 - easy (pengrams with no punctuation and no capitals)
 - medium (long sentences with not puntuation or capitals)
-- hard (sentences with capitals and punctuation)
+- hard (sentences with capitals and punctuation)\
+
 and has words per minute calculator (WPM) and accuracy percentage
 
 ### Screenshot
@@ -33,5 +34,5 @@ and has words per minute calculator (WPM) and accuracy percentage
 
 ## Status
 
-This project is a work in progress and is far from completion.
+This project is a work in progress and is far from completion.\
 steady progress is made, though unoptimal there is still a lot of progress.
