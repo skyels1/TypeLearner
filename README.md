@@ -12,7 +12,7 @@ this is the first program I have made using C
 3 selections for difficulty 
 - easy (pengrams with no punctuation and no capitals)
 - medium (long sentences with not puntuation or capitals)
-- hard (sentences with capitals and punctuation)\
+- hard (sentences with capitals and punctuation)
 
 and has words per minute calculator (WPM) and accuracy percentage
 
