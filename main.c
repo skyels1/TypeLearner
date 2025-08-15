@@ -53,7 +53,7 @@ int main() {
     int selection;
     const char **difficulty;
     int totalSentences;
-    printf("chose a difficulty\n1 = easy\n2 = medium\n3 = hard\n");
+    printf("chose a difficulty (1 = easy, 2 = medium, 3 = hard)\n");
     scanf("%d", &selection);
     if(selection == 1){
         difficulty = easyPrac;
