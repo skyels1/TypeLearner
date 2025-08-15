@@ -9,7 +9,11 @@ this is the first program I have made using C
 
 ## Features
 
-the current stage of this project is just a single sentence and has words per minute calculator (WPM) and accuracy percentage
+3 selections for difficulty 
+- easy (pengrams with no punctuation and no capitals)
+- medium (long sentences with not puntuation or capitals)
+- hard (sentences with capitals and punctuation)
+and has words per minute calculator (WPM) and accuracy percentage
 
 ### Screenshot
 
@@ -21,12 +25,13 @@ the current stage of this project is just a single sentence and has words per mi
 
 ## Plans for the future of this project
 
-- I hope to eventually have a long list of practicing sentences to test on so that the content doesnt go dry
+- [x] I hope to eventually have a long list of practicing sentences to test on so that the content doesnt go dry
 
-- possibly add randomizer to it so that its just random letters and such for more practice
+- [o] possibly add randomizer to it so that its just random letters and such for more practice
 
-- most importantly I plan to add code examples to this to practice typing real code instead of just sentences ie more practical for my usage
+- [o] most importantly I plan to add code examples to this to practice typing real code instead of just sentences ie more practical for my usage
 
 ## Status
 
-This project is a work in progress and is far from completion
+This project is a work in progress and is far from completion.
+steady progress is made, though unoptimal there is still a lot of progress.
