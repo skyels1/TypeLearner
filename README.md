@@ -8,7 +8,7 @@ git clone <https://github.com/skyels1/TypeLearner.git>\
 after clone run `cd TypeLearner`
 
 Step 2. (compile the program)\
-run `gcc src/*.c -o TypeLearner -lrt`
+run `gcc -I include src/*.c -o TypeLearner -lrt`
 
 Step 3. (run the program)\
 to run the program type `./TypeLearner` in console
