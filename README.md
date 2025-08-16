@@ -1,6 +1,18 @@
 # TypeLearner
 A C program to help improve home row typing speed and accuracy
 
+## installation and use
+
+Step 1. (clone the project)\
+git clone <https://github.com/skyels1/TypeLearner.git>
+`cs TypeLearner`
+
+Step 2. (compile the program)\
+run `gcc src/*.c -o TypeLearner -lrt`
+
+Step 3. (run the program)\
+to run the program type `./TypeLearner` in console
+
 ## About
 
 this project was meant to help me (and posibly others) learn how to type home row at a acceptable speed

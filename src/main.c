@@ -3,20 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
-int checkSpace(char c) {
-    if(c == ' ' || c == '\t' || c == '\n'){
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
-double checkTime(){
-    struct timespec ts;
-    clock_gettime(CLOCK_MONOTONIC, &ts);
-    return ts.tv_sec + ts.tv_nsec / 1e9;
-}
+#include "checkSpace.h"
+#include "checkTime.h"
 
 int main() {
     const char *easyPrac[] = {
@@ -25,8 +13,8 @@ int main() {
         "my girl wove six dozen plaid jackets before she quit",
         "brown jars prevented the mixture from freezing too quickly",
         "we promptly judged antique ivory buckles for the next prize",
-        "farmer Jack realized that big yellow quilts were expensive",
-        "when zombies arrive quickly fax Judge pat",
+        "farmer jack realized that big yellow quilts were expensive",
+        "when zombies arrive quickly fax judge pat",
         "how vexingly quick daft zebras jump",
         "fake bugs put in wax jonquils drive him crazy",
         "the five boxing wizards jump quickly",
