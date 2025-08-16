@@ -4,8 +4,8 @@ A C program to help improve home row typing speed and accuracy
 ## installation and use
 
 Step 1. (clone the project)\
-git clone <https://github.com/skyels1/TypeLearner.git>
-`cd TypeLearner`
+git clone <https://github.com/skyels1/TypeLearner.git>\
+after clone run `cd TypeLearner`
 
 Step 2. (compile the program)\
 run `gcc src/*.c -o TypeLearner -lrt`
