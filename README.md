@@ -3,6 +3,13 @@ A C program to help improve home row typing speed and accuracy
 
 ## installation and use
 
+windows was not the main OS used so it is not the primary guide here but it is added
+
+Step 0.
+make sure you have gcc installed check by typing gcc --version in console
+
+if not <https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites> for windows
+
 Step 1. (clone the project)\
 git clone <https://github.com/skyels1/TypeLearner.git>\
 after clone run `cd TypeLearner`
@@ -10,8 +17,12 @@ after clone run `cd TypeLearner`
 Step 2. (compile the program)\
 run `gcc -I include src/*.c -o TypeLearner -lrt`
 
+or if on windows run `gcc -I include src/main.c src/choseDifficulty.c src/checkTime.c src/checkSpace.c -o TypeLearner`
+
 Step 3. (run the program)\
 to run the program type `./TypeLearner` in console
+
+on windows run `./TypeLearner.exe`
 
 ## About
 

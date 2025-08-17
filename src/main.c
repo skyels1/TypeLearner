@@ -15,9 +15,9 @@ int main() {
     printf("Type what is shown below:\n\n");
     printf("%s\n\n", chosenSen);
 
-    // flush the buffer from the held \n
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF);
+    // flush the buffer from the held \n not needed when modular but its here
+    //int c;
+    //while ((c = getchar()) != '\n' && c != EOF);
 
     double start = checkTime();
 

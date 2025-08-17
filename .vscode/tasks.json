@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Build and Run QuickTyper",
+            "label": "Build and Run TypeLearner",
             "command": "gcc",
             "args": [
                 "src/main.c",
@@ -11,7 +11,7 @@
                 "src/checkTime.c",
                 "src/choseDifficulty",
                 "-o",
-                "QuickTyper",
+                "TypeLearner",
                 "-lrt"
             ],
             "group": {
