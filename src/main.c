@@ -16,14 +16,20 @@ int main() {
     printf("%s\n\n", chosenSen);
 
     // flush the buffer from the held \n not needed when modular but its here
-    //int c;
-    //while ((c = getchar()) != '\n' && c != EOF);
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
 
     double start = checkTime();
 
+    // loop to keep the program running if pressed enter, chain fgets
     char typed[length + 2];
-    fgets(typed, length + 2, stdin);
-    typed[strcspn(typed, "\n")] = 0;
+    int typedLength = 0;
+    while (typedLength < length) {
+        if (fgets(typed[typedLength], sizeof(typed) - typedLength, stdin) == NULL) {
+            break;
+        }
+        typedLength = strlen(typed);
+    }
 
     double end = checkTime();
 

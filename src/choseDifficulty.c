@@ -36,10 +36,13 @@ const char *choseDifficulty(void){
         "As the train approached, passengers hurried to find their seats and secure their luggage.",
         "During the storm, lightning illuminated the landscape, revealing distant hills and trees."
     };
+    const char *codePrac[] = {
+        "int codeLoop() {\n\tfor(int i = 0; i<10; i++) {\n\t\tprintf(i)\n\t}\n}"
+    };
     int selection;
     const char **difficulty;
     int totalSentences;
-    printf("chose a difficulty (1 = easy, 2 = medium, 3 = hard)\n");
+    printf("chose a difficulty (1 = easy, 2 = medium, 3 = hard, 0 = code practice)\n");
     scanf("%d", &selection);
     if(selection == 1){
         difficulty = easyPrac;
@@ -52,6 +55,10 @@ const char *choseDifficulty(void){
     else if(selection == 3){
         difficulty = hardPrac;
         totalSentences = sizeof(hardPrac) / sizeof(hardPrac[0]);
+    }
+    else if(selection == 0){
+        difficulty = codePrac;
+        totalSentences = sizeof(codePrac) / sizeof(codePrac[0]);
     }
     else {
         printf("incorrect selection. default is easy.\n");
