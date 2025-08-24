@@ -25,7 +25,7 @@ int main() {
     char typed[length + 2];
     int typedLength = 0;
     while (typedLength < length) {
-        if (fgets(typed[typedLength], sizeof(typed) - typedLength, stdin) == NULL) {
+        if (fgets(&typed[typedLength], sizeof(typed) - typedLength, stdin) == NULL) {
             break;
         }
         typedLength = strlen(typed);

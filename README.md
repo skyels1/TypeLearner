@@ -53,7 +53,7 @@ and has words per minute calculator (WPM) and accuracy percentage
 
 - [ ] possibly add randomizer to it so that its just random letters and such for more practice
 
-- [ ] most importantly I plan to add code examples to this to practice typing real code instead of just sentences ie more practical for my usage
+- [x] most importantly I plan to add code examples to this to practice typing real code instead of just sentences ie more practical for my usage
 
 ## Status
 

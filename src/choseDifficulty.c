@@ -37,7 +37,8 @@ const char *choseDifficulty(void){
         "During the storm, lightning illuminated the landscape, revealing distant hills and trees."
     };
     const char *codePrac[] = {
-        "int codeLoop() {\n\tfor(int i = 0; i<10; i++) {\n\t\tprintf(i)\n\t}\n}"
+        "#include <stdio.h>\nint codeLoop() {\n\tfor(int i = 0; i<10; i++) {\n\t\tprintf(\"%i\",i)\n\t}\n}",
+        "#include <stdio.h>\nint main() {\n\tprintf(""Hello, World!"");\n\treturn 0;\n}}"
     };
     int selection;
     const char **difficulty;
